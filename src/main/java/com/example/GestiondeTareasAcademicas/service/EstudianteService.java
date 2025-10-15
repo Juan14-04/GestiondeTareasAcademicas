@@ -27,6 +27,11 @@ public class EstudianteService implements ImEstidianteService {
         return estudianteRepositoy.save(estudiante);
     }
 
+    @Override
+    public List<Estudiante> finALL() {
+        return List.of();
+    }
+
     private EstudianteRepositoy estudianteRepositoy;
 
     public EstudianteService(EstudianteRepositoy estudianteRepositoy){

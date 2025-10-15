@@ -7,7 +7,7 @@ import java.util.*;
 
 @Repository
 public class TareaRepository {
-    private List<Tarea> Listatarea = new ArrayList<>();
+    private static List<Tarea> Listatarea = new ArrayList<>();
     long idsiguiente = 0;
 
     public Tarea guardar(Tarea tarea) {
