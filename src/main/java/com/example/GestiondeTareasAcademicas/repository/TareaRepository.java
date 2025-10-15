@@ -26,7 +26,7 @@ public class TareaRepository {
         return Listatarea;
     }
 
-    public Optional<Tarea> findBYid(Long id) {
+    public static Optional<Tarea> findBYid(Long id) {
         return Listatarea.stream().filter(tarea -> tarea.getId().equals(id)).findFirst();
     }
 
