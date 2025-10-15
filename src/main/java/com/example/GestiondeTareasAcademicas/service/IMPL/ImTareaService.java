@@ -12,4 +12,6 @@ public interface ImTareaService {
     List<Tarea> findAll();
     Optional<Tarea> findBYid(Long id);
     Tarea crear (String titulo, String descripcion, String completada);
+
+    List<Tarea> finALL();
 }

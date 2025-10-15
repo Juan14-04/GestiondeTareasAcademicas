@@ -10,6 +10,8 @@ public interface ImEstidianteService {
     List<Estudiante> findALL();
     Optional<Estudiante> findBYid(Long id);
     Estudiante crear(String nombre);
+
+    List<Estudiante> finALL();
 }
 
 

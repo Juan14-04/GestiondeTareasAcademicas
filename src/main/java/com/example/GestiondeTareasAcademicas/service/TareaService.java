@@ -35,6 +35,11 @@ public class TareaService implements ImTareaService {
         return tareaRepository.guardar(event);
     }
 
+    @Override
+    public List<Tarea> finALL() {
+        return List.of();
+    }
+
     private TareaRepository tareaRepository;
 
     public TareaService(TareaRepository tareaRepository){
