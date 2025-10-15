@@ -8,6 +8,10 @@ import java.util.*;
 public class EstudianteRepositoy {
     private final List<Estudiante> estudiantes = new ArrayList<>();
 
+    public static List<Estudiante> findALL() {
+        return null;
+    }
+
     public Estudiante save(Estudiante estudiante) {
         estudiantes.add(estudiante);
         return estudiante;
@@ -25,5 +29,8 @@ public class EstudianteRepositoy {
 
     public boolean deleteById(String id) {
         return estudiantes.removeIf(student -> student.getId().equalsIgnoreCase(id));
+    }
+
+    public Optional<Estudiante> findBYid(Long id) {
     }
 }
