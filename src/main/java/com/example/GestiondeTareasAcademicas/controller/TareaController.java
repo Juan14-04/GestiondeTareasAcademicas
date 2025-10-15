@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
-@RequestMapping("/api")
+@RequestMapping("/api2")
 @RestController
 public class TareaController {    private ImTareaService imTareaService;
     @PostMapping("/crear")
