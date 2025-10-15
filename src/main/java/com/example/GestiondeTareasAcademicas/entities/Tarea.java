@@ -47,4 +47,7 @@ public class Tarea {
     public void setCompletada(String completada) {
         this.completada = completada;
     }
+
+    public void add(Tarea tarea) {
+    }
 }
